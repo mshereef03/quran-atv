@@ -1,0 +1,37 @@
+name: Quran for Apple TV
+options:
+  bundleIdPrefix: com.mshereef
+  deploymentTarget:
+    tvOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+targets:
+  Quran:
+    type: application
+    platform: tvOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Quran
+        excludes:
+          - "Fonts/AmiriQuran-LICENSE.txt"
+          - "Fonts/ScheherazadeNew-LICENSE.txt"
+          - "Fonts/Harmattan-LICENSE.txt"
+          - "Info.plist"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mshereef.QuranATV
+        PRODUCT_NAME: Quran
+        INFOPLIST_FILE: Quran/Info.plist
+        TARGETED_DEVICE_FAMILY: "3"
+        SUPPORTS_TEXT_INPUT: NO
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+schemes:
+  Quran:
+    build:
+      targets:
+        Quran: all
+    run:
+      config: Debug
