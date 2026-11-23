@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quran Privacy &amp; Terms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F7FAF7;
+    --bg-elevated: #FFFFFF;
+    --bg-sunken: #EEF4EF;
+    --text: #10231A;
+    --text-muted: #51665A;
+    --text-faint: #7E9088;
+    --accent: #1E7A4E;
+    --accent-soft: #E3F3E8;
+    --border: #DCE8DF;
+    --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0A0F0B;
+      --bg-elevated: #121A14;
+      --bg-sunken: #0E1510;
+      --text: #EAF2EC;
+      --text-muted: #9FB3A7;
+      --text-faint: #6C8178;
+      --accent: #8FD9AD;
+      --accent-soft: #16261C;
+      --border: #223029;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0A0F0B;
+    --bg-elevated: #121A14;
+    --bg-sunken: #0E1510;
+    --text: #EAF2EC;
+    --text-muted: #9FB3A7;
+    --text-faint: #6C8178;
+    --accent: #8FD9AD;
+    --accent-soft: #16261C;
+    --border: #223029;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(ellipse 900px 500px at 50% -10%, var(--accent-soft), transparent 70%);
+    opacity: .9;
+    pointer-events: none;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 28px 120px;
+  }
+
+  header.masthead {
+    padding: 56px 0 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: .01em;
+  }
+
+  .mark .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  h1.title {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 600;
+    line-height: 1.12;
+    margin: 22px 0 10px;
+    text-wrap: balance;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: var(--text-faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  nav.jump {
+    display: flex;
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  nav.jump a {
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    transition: border-color .15s ease, color .15s ease;
+  }
+
+  nav.jump a:hover,
+  nav.jump a:focus-visible {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .callout {
+    margin: 40px 0 8px;
+    padding: 22px 24px;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    border: 1px solid var(--border);
+  }
+
+  .callout .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  .callout ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .callout li {
+    margin: 6px 0;
+    color: var(--text);
+  }
+
+  section.doc {
+    padding-top: 64px;
+  }
+
+  section.doc > h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 6px;
+    scroll-margin-top: 24px;
+  }
+
+  section.doc > .subtitle {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0 0 36px;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 36px 0 10px;
+    color: var(--text);
+  }
+
+  p, li {
+    color: var(--text-muted);
+    max-width: 65ch;
+  }
+
+  p {
+    margin: 0 0 16px;
+  }
+
+  ul, ol {
+    padding-left: 22px;
+    margin: 0 0 16px;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
+  strong { color: var(--text); }
+
+  a.inline {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 2px;
+  }
+
+  a.inline:hover { text-decoration-color: var(--accent); }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 64px 0 0;
+  }
+
+  .contact-card {
+    margin-top: 64px;
+    padding: 28px 28px 30px;
+    border-radius: 16px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    display: grid;
+    gap: 18px;
+  }
+
+  .contact-card h3 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: 20px;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+
+  .contact-row:first-of-type { border-top: none; padding-top: 0; }
+
+  .contact-label {
+    font-size: 13px;
+    color: var(--text-faint);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  .contact-value {
+    font-size: 15px;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  footer {
+    margin-top: 56px;
+    color: var(--text-faint);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  @media (max-width: 520px) {
+    .page { padding: 0 20px 100px; }
+    header.masthead { padding: 40px 0 28px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="backdrop"></div>
+
+<div class="page">
+  <header class="masthead">
+    <div class="mark"><span class="dot"></span>Quran for tvOS</div>
+    <h1 class="title">Privacy &amp; Terms</h1>
+    <div class="updated">Last updated November 23, 2026</div>
+    <nav class="jump">
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#terms">Terms of Use</a>
+    </nav>
+  </header>
+
+  <div class="callout">
+    <p class="eyebrow">In short</p>
+    <ul>
+      <li>We don't collect, store, or transmit any personal data. There are no accounts, no analytics, and no advertising.</li>
+      <li>Your preferences — font, reciter, bookmarks, playback position — stay on your Apple TV, in Apple's standard app storage.</li>
+      <li>Quran text, translations, and recitation audio are provided by <strong>Quran Foundation</strong>, fetched only as needed to show what you're viewing.</li>
+    </ul>
+  </div>
+
+  <section class="doc" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p class="subtitle">Applies to the Quran app for Apple TV.</p>
+
+    <h3>Data we collect</h3>
+    <p>None. This app does not require or offer account creation, does not use analytics or advertising software development kits, and does not transmit any personal information to us or to any third party.</p>
+
+    <h3>Data stored on your device</h3>
+    <p>The app saves a small set of preferences locally on your Apple TV, using Apple's standard application storage. This data never leaves your device and is not visible to us:</p>
+    <ul>
+      <li>Your chosen Arabic font, text size, and translation setting</li>
+      <li>Your selected reciter</li>
+      <li>Bookmarked surahs</li>
+      <li>Your playback position, so you can resume where you left off</li>
+    </ul>
+    <p>Deleting the app removes all of this data. There is no copy of it anywhere else.</p>
+
+    <h3>Network requests</h3>
+    <p>To show you Quranic text, translations, and recitation audio, the app makes requests to the <a class="inline" href="https://api-docs.quran.foundation" target="_blank" rel="noopener">Quran Foundation API</a> and streams audio directly from Quran Foundation's audio hosting. These requests include only what's needed to fetch the content you're viewing — for example, a chapter number — never anything that identifies you personally. As with any request over the internet, your device's IP address is visible to that service in the ordinary course of serving the request; we have no access to it ourselves.</p>
+
+    <h3>Children's privacy</h3>
+    <p>Because the app collects no personal data from anyone, it does not knowingly collect personal data from children either.</p>
+
+    <h3>Changes to this policy</h3>
+    <p>If this policy changes, the update will be posted on this page with a revised date above.</p>
+  </section>
+
+  <section class="doc" id="terms">
+    <h2>Terms of Use</h2>
+    <p class="subtitle">Applies to the Quran app for Apple TV.</p>
+
+    <h3>What this app is</h3>
+    <p>Quran for tvOS is a free, independently developed app for listening to Quranic recitation and following along with the text and translation. It is not affiliated with or endorsed by any reciter, publisher, or Quran Foundation beyond our use of their public API under their own terms.</p>
+
+    <h3>Content and rights</h3>
+    <p>The app's own source code is open source under the MIT License, available at <a class="inline" href="https://github.com/mshereef03/quran-atv" target="_blank" rel="noopener">github.com/mshereef03/quran-atv</a>. Quranic text, translations, and recitation audio displayed in the app are provided by Quran Foundation under their <a class="inline" href="https://api-docs.quran.foundation/legal/developer-terms/" target="_blank" rel="noopener">Developer Terms of Service</a>; rights to individual recitation recordings and translation editions belong to their respective reciters, translators, and rights holders.</p>
+
+    <h3>Using the app</h3>
+    <p>You're welcome to use this app for personal, lawful listening and study. Please don't attempt to extract, redistribute, or rehost the Quranic content served through the app as a separate dataset or product — that's restricted by the terms we operate under, not just our own preference.</p>
+
+    <h3>No warranty</h3>
+    <p>The app is provided "as is." Reciters, surahs, or specific recordings may occasionally become unavailable if the underlying content provider removes them — we don't control that and can't guarantee the permanent availability of any particular recitation. We make no warranty, express or implied, about the app's accuracy, availability, or fitness for a particular purpose.</p>
+
+    <h3>Changes</h3>
+    <p>We may update the app, or these terms, over time. Continuing to use the app after an update means you accept the current terms, which will always be posted on this page.</p>
+  </section>
+
+  <hr class="divider" />
+
+  <div class="contact-card">
+    <h3>Questions or feedback</h3>
+    <div class="contact-row">
+      <span class="contact-label">Email</span>
+      <span class="contact-value">quranappletv@gmail.com</span>
+    </div>
+    <div class="contact-row">
+      <span class="contact-label">Source code</span>
+      <span class="contact-value">github.com/mshereef03/quran-atv</span>
+    </div>
+  </div>
+
+  <footer>Quran for tvOS — open source, MIT licensed.</footer>
+</div>
+</body>
+</html>
