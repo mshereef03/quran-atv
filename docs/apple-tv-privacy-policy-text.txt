@@ -1,0 +1,13 @@
+Privacy Policy — Quran for Apple TV
+
+Data we collect: None. This app does not require or offer account creation, does not use analytics or advertising software development kits, and does not transmit any personal information to us or to any third party.
+
+Data stored on your device: The app saves a small set of preferences locally on your Apple TV, using Apple's standard application storage. This data never leaves your device and is not visible to us: your chosen Arabic font, text size, and translation setting; your selected reciter; bookmarked surahs; and your playback position, so you can resume where you left off. Deleting the app removes all of this data. There is no copy of it anywhere else.
+
+Network requests: To show you Quranic text, translations, and recitation audio, the app makes requests to the Quran Foundation API and streams audio directly from Quran Foundation's audio hosting. These requests include only what's needed to fetch the content you're viewing — for example, a chapter number — never anything that identifies you personally. As with any request over the internet, your device's IP address is visible to that service in the ordinary course of serving the request; we have no access to it ourselves.
+
+Children's privacy: Because the app collects no personal data from anyone, it does not knowingly collect personal data from children either.
+
+Changes to this policy: If this policy changes, the update will be posted at https://mshereef03.github.io/quran-atv/ with a revised date.
+
+Contact: quranappletv@gmail.com
