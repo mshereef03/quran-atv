@@ -46,7 +46,7 @@ If you fork this project to publish your own app, you are responsible for regist
 
 ## Privacy Policy & Terms of Use
 
-[Privacy Policy & Terms of Use](https://claude.ai/code/artifact/cf1fa7b9-6412-4b36-82f8-1045401c4c02) — required reading before submitting to the App Store; this is the URL to use in App Store Connect's Privacy Policy field. This link must be shared publicly (not just accessible to the owner) before submission, since App Review needs to open it. If you later move this content to your own domain, update this link and the App Store Connect listing accordingly.
+[Privacy Policy & Terms of Use](https://mshereef03.github.io/quran-atv/) — this is the URL used in App Store Connect's Privacy Policy field. The source lives at `docs/index.html` and is served via GitHub Pages; edit that file and push to update the live page.
 
 ## Contributing
 
