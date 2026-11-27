@@ -1,4 +1,4 @@
-name: Quran for Apple TV
+name: The Noble Quran
 options:
   bundleIdPrefix: com.mshereef
   deploymentTarget:
