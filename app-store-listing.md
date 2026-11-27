@@ -1,4 +1,4 @@
-# App Store Listing — The Noble Quran
+# App Store Listing — The Noble Quran, Recitation
 
 ## Name (max 30 chars)
 The Noble Quran, Recitation

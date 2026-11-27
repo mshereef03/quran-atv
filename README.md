@@ -1,4 +1,4 @@
-# Quran — tvOS
+# The Noble Quran, Recitation
 
 A native SwiftUI tvOS app for streaming Quran recitation, ayah by ayah, on the Apple TV. Browse by surah or juz', follow along with highlighted Arabic text and an optional English translation, bookmark favorites, and resume where you left off.
 
@@ -23,7 +23,7 @@ A native SwiftUI tvOS app for streaming Quran recitation, ayah by ayah, on the A
 git clone <this-repo-url>
 cd quran-atv
 xcodegen generate
-open Quran.xcodeproj
+open "The Noble Quran.xcodeproj"
 ```
 
 The Xcode project itself is generated from `project.yml` and is not committed — run `xcodegen generate` any time you pull changes that touch `project.yml` or add/remove files.
