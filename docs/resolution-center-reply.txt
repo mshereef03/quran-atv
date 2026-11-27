@@ -1,0 +1,12 @@
+Hello,
+
+Thank you for the detailed feedback. We've addressed all three items:
+
+1. Guideline 5.2.5 (Trademark): We've updated the app name to "The Noble Quran, Recitation," which no longer references any Apple product or service name.
+
+2. Guideline 2.1 (Demo video): A demo video filmed on a physical Apple TV is available here: https://youtu.be/zzf0A9JDvKI
+It shows the app's core features and specifically demonstrates background audio continuing to play after leaving the app (pressing the Home button during playback), which we understand was the main functionality in question. We've also added this link to the Notes field under App Review Information.
+
+3. Guideline 1.5 (Support URL): We've updated the Support URL to a page with clear support/contact information: https://mshereef03.github.io/quran-atv/#support
+
+Please let us know if any further information is needed. Thank you for your time reviewing the app.
