@@ -1,7 +1,7 @@
 # App Store Listing — The Noble Quran
 
 ## Name (max 30 chars)
-The Noble Quran
+The Noble Quran - Ayah by Ayah
 
 ## Subtitle (max 30 chars)
 Premium Quran Recitation
